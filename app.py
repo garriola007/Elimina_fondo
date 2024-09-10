@@ -15,6 +15,8 @@ def save_upload_file(upload_file):
 def run_background_remover(input_img_file):
   input_img_path = save_uploaded_file(input_img_file)
   output_img_path = input_img_path.replace(_old:'.', __new:'__rmbg.').replace(__old:'jpeg', __new:'png')
+  try:
+    image = Image.open(input_img_path)
   
   
     
